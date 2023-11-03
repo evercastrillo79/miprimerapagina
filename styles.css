@@ -1,0 +1,250 @@
+body {
+  margin: 0.5em;
+  padding: auto;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  background-color: rgba(34, 33, 31, 0.85);
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a i {
+  color: white;
+  font-size: 2em;
+  padding: 0.5em;
+}
+
+header nav ul {
+  display: flex;
+  gap: 1.5em;
+  margin: 1.5em;
+}
+
+header nav ul li a {
+  color: white;
+}
+
+.Seccion-1 h2 {
+  font-size: 50px;
+  font: Arial;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+
+}
+
+.Seccion-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  background-color: #F2F3F4
+}
+
+.foto1 {
+  width: 310px;
+  padding: 15px;
+}
+
+.sobre-mi p {
+  width: 500px;
+  margin-left: 20px;
+  text-align: right;
+}
+
+.Seccion-2 img {
+  width: 100%;
+  height: 350px;
+
+}
+
+.final {
+  padding: 100px;
+  margin: 50px;
+  list-style: none;
+  background-color: bisque;
+  width: 100%;
+
+}
+
+.material-symbols-outlined {
+  color: white;
+  font-size: 4em;
+  padding: 5px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+/* ------------- Encabezado Contacto ------------- */
+
+
+
+.form-header {
+  text-align: center;
+  background-color: #f6f7f8;
+  border: 1px solid #d6d9dc;
+  border-radius: 3px;
+
+  width: 80%;
+  margin: 10px auto;
+  padding: 50px;
+}
+
+.form-header h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+/* ------------- Formulario ------------- */
+
+.formulario {
+  background-color: #f6f7f8;
+  border: 1px solid #d6d9dc;
+  border-radius: 3px;
+
+  width: 80%;
+  padding: 50px;
+  margin: auto;
+  text-align: center;
+}
+
+/* ------------- Campos del Formulario ------------- */
+
+.form-row {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"] {
+  background-color: #bdbdbd;
+  border: 0;
+  border-radius: 6px;
+  width: 100%;
+  padding: 7px;
+  font-size: 14px;
+}
+
+.form-row label {
+  margin-bottom: 3px;
+  text-align: initial;
+}
+
+/* ------------- Para Pantallas de más de 700px ------------- */
+@media only screen and (min-width: 700px) {
+  .form-header {
+    padding: 50px;
+  }
+
+  .form-row {
+    flex-direction: column;
+    /* Cambia de row a column */
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+
+  .form-row input[type="text"] {
+    width: 100%;
+    /* Utiliza el ancho completo */
+    height: initial;
+  }
+
+  .form-row label {
+    text-align: initial;
+    width: 100%;
+    /* Utiliza el ancho completo */
+    margin-top: 7px;
+    padding-right: 0;
+    /* Quita el espaciado derecho */
+  }
+}
+
+.form-row textarea {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+
+
+  background-color: #bdbdbd;
+  border: 0;
+  border-radius: 6px;
+
+
+  min-height: 200px;
+  margin-bottom: 10px;
+  padding: 7px;
+  resize: none;
+
+
+  width: 100%;
+
+}
+
+/* ------------- Para Pantallas de más de 700px ------------- */
+
+
+.form-row textarea {
+  width: 250px;
+}
+
+.form-row button {
+  font-size: 16px;
+  font-weight: bold;
+
+
+  color: #ffffff;
+  background-color: #5995da;
+
+
+  border: none;
+  border-radius: 3px;
+
+
+  padding: 10px 40px;
+  cursor: pointer;
+
+  margin: 0 auto;
+}
+
+
+.form-row button:hover {
+  background-color: #76aeed;
+}
+
+.form-row button:active {
+  background-color: #407fc7;
+}
+
+
+/* ------------- Para Pantallas de más de 700px ------------- */
+
+
+.form-row button {
+  margin-left: 120px;
+
+}
+
+.alertas {
+  color: red;
+}
